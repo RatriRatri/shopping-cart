@@ -63,9 +63,9 @@
                         <h5>Total:</h5>
                      </div>
                      <div class="col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5>$<span id="subTotal"></span></h5>
+                        <h5>$</h5>
+                        <h5>$<span id="total"></span></h5>
                      </div>
                   </div>
                </div>
@@ -91,6 +91,14 @@
          var productOnePrice = 1219;
          productOnePrice = parseFloat(productOnePrice) * productOneCount;
          document.getElementById("productOnePrice").innerHTML = productOnePrice;
+
+         // 
+         var p1p = document.getElementById("productOnePrice").innerHTML;
+         var p2p = document.getElementById("productTwoPrice").innerHTML;
+
+         var total = parseFloat(p1p) + parseFloat(p2p);
+         document.getElementById("subTotal").innerHTML = total;
+         document.getElementById("total").innerHTML = total;
       }
 
       function func_productOneDelEvent() {
@@ -103,6 +111,14 @@
          var productOnePrice = 1219;
          productOnePrice = parseFloat(productOnePrice) * productOneCount;
          document.getElementById("productOnePrice").innerHTML = productOnePrice;
+
+         // 
+         var p1p = document.getElementById("productOnePrice").innerHTML;
+         var p2p = document.getElementById("productTwoPrice").innerHTML;
+
+         var total = parseFloat(p1p) + parseFloat(p2p);
+         document.getElementById("subTotal").innerHTML = total;
+         document.getElementById("total").innerHTML = total;
       }
 
       document.getElementById("productTwoPrice").innerHTML = 59;
@@ -117,6 +133,14 @@
          var productTwoPrice = 59;
          productTwoPrice = parseFloat(productTwoPrice) * productTwoCount;
          document.getElementById("productTwoPrice").innerHTML = productTwoPrice;
+
+         // 
+         var p1p = document.getElementById("productOnePrice").innerHTML;
+         var p2p = document.getElementById("productTwoPrice").innerHTML;
+
+         var total = parseFloat(p1p) + parseFloat(p2p);
+         document.getElementById("subTotal").innerHTML = total;
+         document.getElementById("total").innerHTML = total;
       }
 
       function func_productTwoDelEvent() {
@@ -129,6 +153,14 @@
          var productTwoPrice = 59;
          productTwoPrice = parseFloat(productTwoPrice) * productTwoCount;
          document.getElementById("productTwoPrice").innerHTML = productTwoPrice;
+
+         // 
+         var p1p = document.getElementById("productOnePrice").innerHTML;
+         var p2p = document.getElementById("productTwoPrice").innerHTML;
+
+         var total = parseFloat(p1p) + parseFloat(p2p);
+         document.getElementById("subTotal").innerHTML = total;
+         document.getElementById("total").innerHTML = total;
       }
    </script>
 </body>
